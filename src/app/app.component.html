@@ -1,10 +1,9 @@
 <h1>NgRx Component Example</h1>
-<!-- Below uses Zones for change detection -->
 <h3>
-  Counter: {{ count$ | async }}
+  Counter: {{ count$ | ngrxPush }}
 </h3>
 <!-- Want below to show when observable emits for the first time -->
 <!-- Unfortunately, below also doesn't show when the observable emits a falsy value -->
-<p *ngIf="isCountEven$ | async as isCountEven">
+<p *ngIf="isCountEven$ | ngrxPush as isCountEven">
   The count is {{ isCountEven ? 'even' : 'odd' }}
 </p>
