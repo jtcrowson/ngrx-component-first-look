@@ -1,0 +1,46 @@
+{
+  "name": "@ngrx/component",
+  "version": "9.1.0+1.sha-6a18359",
+  "description": "Reactive Extensions for Angular Components",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ngrx/platform.git"
+  },
+  "keywords": [
+    "Angular",
+    "RxJS",
+    "NgRx",
+    "Components",
+    "Angular CLI"
+  ],
+  "author": "NgRx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ngrx/platform/issues"
+  },
+  "homepage": "https://github.com/ngrx/platform#readme",
+  "peerDependencies": {
+    "@angular/common": "^9.0.0",
+    "@angular/core": "^9.0.0",
+    "rxjs": "^6.5.3"
+  },
+  "sideEffects": false,
+  "main": "./bundles/component.umd.js",
+  "fesm5": "./fesm5/component.js",
+  "fesm2015_ivy_ngcc": "__ivy_ngcc__/fesm2015/component.js",
+  "fesm2015": "./fesm2015/component.js",
+  "esm5": "./esm5/component.js",
+  "esm2015": "./esm2015/component.js",
+  "typings": "./component.d.ts",
+  "module": "./fesm5/component.js",
+  "es2015_ivy_ngcc": "__ivy_ngcc__/fesm2015/component.js",
+  "es2015": "./fesm2015/component.js",
+  "__processed_by_ivy_ngcc__": {
+    "es2015": "9.1.0",
+    "fesm2015": "9.1.0",
+    "typings": "9.1.0"
+  },
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by NGCC. This is not allowed.\\nPlease delete and rebuild the package, without compiling with NGCC, before attempting to publish.\\nNote that NGCC may have been run by importing this package into another project that is being built with Ivy enabled.\\n')\" && exit 1"
+  }
+}
