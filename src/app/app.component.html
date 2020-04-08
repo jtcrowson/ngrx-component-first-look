@@ -2,8 +2,6 @@
 <h3>
   Counter: {{ count$ | ngrxPush }}
 </h3>
-<!-- Want below to show when observable emits for the first time -->
-<!-- Unfortunately, below also doesn't show when the observable emits a falsy value -->
-<p *ngIf="isCountEven$ | ngrxPush as isCountEven">
+<p *ngrxLet="isCountEven$ as isCountEven">
   The count is {{ isCountEven ? 'even' : 'odd' }}
 </p>
